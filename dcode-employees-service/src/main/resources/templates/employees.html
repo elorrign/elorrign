@@ -1,0 +1,119 @@
+<!DOCTYPE HTML> 
+<html xmlns:th="h, ttp://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+	 menu {
+		background-color: rgb(27,27, 27);
+		border-bottom-color:rgba(0, 0, 0, 0.15);
+		border-left-color:rgba(0, 0, 0, 0.15);
+		border-right-color:rgba(0, 0, 0, 0.15);
+		border-right-style:solid;
+		border-right-width:1px;
+		border-top-color:rgba(0, 0, 0, 0.15);
+		box-sizing:border-box;
+		color:rgb(189,192,194);
+		display:block;
+		font-family: Montserrat, sans-serif;
+		font-size: 26px;
+		font-weight: 700;
+		letter-spacing: 0px;
+		line-height: 1.33;
+		height:722.4px;
+		left:0px;
+		max-width:80%;
+		overflow-y:auto;
+		padding-top:57px;
+		position:fixed;
+		text-size-adjust:100%;
+
+		width:15%;
+		z-index:70;
+		
+		
+		float: left;
+	 }
+	 #page {
+		margin-left: auto;
+		margin-right: auto;
+	 }
+	 #content {
+		float: right;
+		width:85%;
+	 }
+	 th{
+		box-sizing:border-box;
+		color:rgb(23, 153, 182);
+		display:inline-block;
+		font-family:Montserrat, sans-serif;
+		font-size:38px;
+		font-style:normal;
+		font-variant-ligatures:none;
+		font-weight:700;
+		height:54.4px;
+		letter-spacing:-1px;
+		line-height:54.72px;
+		max-width:100%;
+		overflow-wrap:break-word;
+		pointer-events:all;
+		position:relative;
+		text-align:center;
+		text-size-adjust:100%;
+		white-space:pre-wrap;
+		
+	 }
+	td{
+		font-family:"Open Sans", sans-serif;
+		font-size:16px;
+		font-style:italic;
+		font-variant-ligatures:none;
+		font-weight:400;
+	 }
+	</style>
+</head>
+<body>
+<div id="page">
+<menu>
+	Menu 1
+</menu>
+
+	<div id="header">
+	</div>
+	<div id="content">
+	
+	
+    <table>
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Last Name </th>
+            <th> Email </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+		<td>111</td>
+		<td>John</td>
+		<td>Snow</td>
+		<td>john.snow@darecode.com</td>
+	</tr>
+    <tr><td>111</td><td>John</td><td>Snow</td><td>john.snow@darecode.com</td></tr>
+    <tr><td>111</td><td>John</td><td>Snow</td><td>john.snow@darecode.com</td></tr>
+    <!-- <tr th:if="${employees.empty}">
+            <td colspan="2"> No employees</td>
+        </tr>
+        <tr th:each="employee : ${employees}">
+            <td><span th:text="${employee.id}"> Title </span></td>
+            <td><span th:text="${employee.name}"> Name </span></td>
+            <td><span th:text="${employee.lastName}">  Last Name </span></td>
+            <td><span th:text="${employee.email}"> Email </span></td>
+        </tr>
+    </tbody> -->
+</table>
+</div>
+
+</div>
+</body>
+</html>
